@@ -1,0 +1,145 @@
+main{
+     width:90vw;
+     margin: 5vw auto;
+}
+
+hr{
+    border: none;
+    border-bottom:3px solid var(--bg-secondary);
+}
+
+.profile-picture-box{
+    width: 75px;
+    height: 90px;
+    margin-bottom: 10vw;
+}
+
+.profile-picture-box img{
+    width: 75px;
+}
+
+.introduction .job{
+    margin-left: 1em;
+    margin-bottom: .3em;
+    font-size: 1.3em;
+}
+
+
+.introduction .description{
+    margin-top: .5em;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.buttons{
+    position: relative;
+    top: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button{
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.buttons .cv{
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--text-primary);
+    color: var(--text-primary);
+}
+
+.buttons .werk{
+    background-color: transparent;
+    border: 1px solid var(--text-primary);
+    color: var(--text-primary);
+}
+.footer{
+    position: fixed;
+    bottom: 7vw;
+    width: 90vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer a{
+    color: var(--text-primary);
+    font-size: 2em;
+}
+
+.logo-picture-box img{
+    width: 75px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+@media only screen and (min-width: 700px) {
+    .buttons, .introduction{
+        width: 80%;
+    }
+
+    .introduction hr{
+        margin-bottom: 20%;
+    }
+
+    .introduction .description{
+        width: 70%;
+        margin-bottom: 10%;
+    }
+
+    .profile-picture-box{
+        position: absolute;
+        top: 20%;
+        left: 65%;
+    }
+
+    .logo-picture-box img{
+        width: 125px;
+    }
+
+    .profile-picture-box img{
+        width: 200px;
+    }
+
+    .profile-picture-box{
+        width: 150px;
+        height: 175px;
+        margin-bottom: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .profile-picture-box img{
+        width: 300px;
+    }
+
+    .profile-picture-box{
+        top: 15%;
+        left: 60%;
+    }
+
+    .introduction{
+        position: absolute;
+        top:30%;
+        display: block;
+    }
+
+    .buttons{
+        position: absolute;
+        top:65%;
+    }
+
+    .buttons, .introduction{
+        width: 50%;
+    }
+
+    .introduction hr{
+        margin-bottom: 0;
+    }
+
+    .logo-picture-box img{
+        top: 5%;
+    }
+}

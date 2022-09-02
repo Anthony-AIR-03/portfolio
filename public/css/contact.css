@@ -1,0 +1,37 @@
+main{
+    background-color: var(--bg-thirtiary);
+    width: 90%;
+    height: 80%;
+    padding: 2%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -45%);
+}
+
+h1, .description{
+    color: var(--bg-secondary);
+}
+
+hr{
+    border: none;
+    border-bottom:3px solid var(--bg-secondary);
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    main{
+        background-color: var(--bg-thirtiary);
+        width: 80%;
+        height: 80%;
+        border-radius: 25px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform:translate(-55%, -50%);
+    }
+}

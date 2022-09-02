@@ -1,0 +1,18 @@
+:root{
+    --text-primary: white;
+    --text-secondary: black;
+    --bg-primary: #23283A;
+    --bg-secondary: #FF7A00;
+    --bg-thirtiary: white;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
