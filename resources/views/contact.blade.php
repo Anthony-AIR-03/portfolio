@@ -2,6 +2,9 @@
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
 @endsection
+@section('js')
+    <script src="{{ asset('js/contact.js') }}" defer></script>
+@endsection
 
 @section('content')
 <div class="contact-info">
@@ -43,7 +46,7 @@
     </form>
 </div>
 <div class="contact-options">
-    <p>06-36470448</p>
+    <p  id="tel-nummer">06-36470448</p>
     <p>Anthonyair03@gmail.com</p>
     <p>van de woestijnestraat 84, 3076ev Rotterdam</p>
 </div>
