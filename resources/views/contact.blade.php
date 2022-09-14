@@ -7,6 +7,9 @@
 @endsection
 
 @section('content')
+<div class="logo-picture-box">
+    <img src="{{ asset('images/AIR_logo.png') }}" alt="Anthony Inocencio Ramos logo">
+</div>
 <div class="contact-info">
     <h1>contact information</h1>
     <hr>
@@ -16,6 +19,9 @@
     </p>
 </div>
 <div class="contact-form-box">
+    <div class="contact-form-title-box">
+        <h1>Stuur een mail</h1>
+    </div>
     <form action="#" method="post" class="contact-form">
         <div class="input-box">
             <input type="text" name="name" required>
@@ -29,7 +35,7 @@
             <input type="email" name="mail" required>
             <label for="mail">email*</label>
         </div>
-        <div class="input-box">
+        <div class="input-box input-subject-box">
             <select name="subject">
                 <option value="compliment">compliment</option>
                 <option value="work">werk</option>
@@ -46,9 +52,9 @@
     </form>
 </div>
 <div class="contact-options">
-    <p  id="tel-nummer">06-36470448</p>
-    <p>Anthonyair03@gmail.com</p>
-    <p>van de woestijnestraat 84, 3076ev Rotterdam</p>
+    <p id="tel-nummer"><i class="fa-solid fa-square-phone"></i>06-36470448</p>
+    <p><i class="fa-solid fa-envelope"></i>Anthonyair03@gmail.com</p>
+    <p><i class="fa-solid fa-location-dot"></i>van de woestijnestraat 84, 3076ev Rotterdam</p>
 </div>
 
 @endsection

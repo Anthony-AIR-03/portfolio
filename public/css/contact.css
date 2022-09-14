@@ -13,6 +13,22 @@ main{
     row-gap: 5vh;
 }
 
+i{
+    font-size: 20px;
+    margin-right: .5em;
+}
+
+.logo-picture-box{
+    position: absolute;
+    top: -13%;
+    right: 0;
+    height: 15%;
+}
+
+.logo-picture-box img{
+    height: 100%;
+}
+
 .contact-info{
     margin-bottom: 3vh;
 }
@@ -36,6 +52,10 @@ hr{
 .contact-form-box{
     display: flex;
     justify-content: center;
+}
+
+.contact-form-title-box{
+    display: none;
 }
 
 .contact-form input, .contact-form select, .contact-form textarea{
@@ -117,12 +137,111 @@ textarea[name="message"]{
         background-color: var(--bg-thirtiary);
         width: 80%;
         height: 80%;
+        padding: 0 2% 2% 0;
         border-radius: 25px;
         position: absolute;
         top:50%;
         left: 50%;
         transform:translate(-55%, -50%);
     }
+
+    .logo-picture-box {
+        top: -10%;
+        right: -15%;
+    }
+
+    .contact-info{
+        background-color: var(--bg-secondary);
+        color: var(--bg-thirtiary);
+        width: 40%;
+        height: 100%;
+        padding: 2%;
+        border-radius: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    h1{
+        color: var(--bg-thirtiary);
+    }
+
+    hr{
+        border-bottom:3px solid var(--bg-thirtiary);
+    }
+
+    .contact-form-box {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        padding-left: 2%;
+        position: absolute;
+        left: 73%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+
+    .contact-form input, .contact-form select, .contact-form textarea{
+        background-color: transparent;
+        color: var(--bg-primary);
+        width: 40vw;
+        height: 3em;
+        padding: 4px;
+        border-radius: 7px;
+        border: 2px solid var(--bg-primary);;
+        outline: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px var(--bg-thirtiary) inset !important;
+        -webkit-text-fill-color: var(--text-secondary) !important;
+    }
+
+    .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus{
+        background-color: var(--bg-thirtiary);
+        border: 2px solid var(--bg-secondary);
+        outline: none;
+    }
+
+    .input-box label{
+        background-color: var(--bg-thirtiary);
+        color: var(--bg-secondary);
+    }
+
+    textarea[name="message"] {
+        width: 40vw;
+        height: 6em;
+    }
+
+    .contact-options{
+        color: var(--text-primary);
+        z-index: 2;
+        width: 35%;
+        position: absolute;
+        bottom: 20%;
+        left: 2%;
+    }
+
+    input[type="submit"]{
+        background-color: var(--bg-secondary);
+        padding: .5rem 1rem;
+    }
+
+    .contact-form-title-box{
+        position: absolute;
+        top: -20%;
+        font-size: 1.2em;
+        display: block;
+    }
+
+    .contact-form-title-box h1{
+        color: var(--bg-secondary);
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -135,5 +254,29 @@ textarea[name="message"]{
         top:50%;
         left: 50%;
         transform:translate(-55%, -50%);
+    }
+
+    .contact-form input{
+        width: 20vw;
+    }
+
+    .input-email-box {
+        width: 25vw;
+    }
+
+    
+    input[name="mail"]{
+        width: 100%;
+    }
+
+    .input-subject-box, .contact-form select{
+        width: 15vw;
+    }
+
+    .contact-form-title-box{
+        position: absolute;
+        top: -35%;
+        font-size: 1.2em;
+        display: block;
     }
 }
